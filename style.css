@@ -1,0 +1,115 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Form Elements */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Result Box */
+#result {
+  margin-top: 30px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-left: 4px solid #007acc;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #result {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  #result {
+    font-size: 0.9rem;
+  }
+}
