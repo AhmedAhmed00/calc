@@ -47,7 +47,7 @@ function calculateWorkData(hoursWorked) {
   const earnedMoney = Math.min(hoursWorked, totalMonthlyHours) * hourlySalary;
   const missingHours = remainingHours < 0 ? 0 : remainingHours;
   const deduction = missingHours * 2 * hourlySalary;
-  const netSalary = earnedMoney - deduction;
+  const netSalary = salary - deduction;
 
   const completionPercentage = (hoursWorked / totalMonthlyHours) * 100;
   const monthProgressPercentage = (passedWorkingDays / totalWorkingDays) * 100;
