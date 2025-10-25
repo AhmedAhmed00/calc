@@ -1,6 +1,6 @@
 // Constants
 const totalMonthlyHours = 176;
-const salary = 13000;
+const salary = 12000;
 const hourlySalary = salary / totalMonthlyHours;
 const workDaysPerWeek = [
   "Saturday",
